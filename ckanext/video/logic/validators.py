@@ -9,8 +9,18 @@ import re
 from ckan.plugins import toolkit
 from ckanext.video.providers import video_provider_patterns
 
+def is_valid_video_url(value):
+    """
+    Determine whether a URL is a valid video URL.
 
-def is_valid_video_url(value, context):
+    :param value:
+    """
+    for pattern in video_provider_patterns.values():
+        if re.search(pattern, value, re.IGNORECASE):
+            return True
+    return False
+
+def is_valid_video_url_with_context(value, context):
     """
     Validate a URL is a valid video URL.
 
