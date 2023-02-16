@@ -9,7 +9,7 @@ import re
 from ckan.plugins import toolkit
 from ckanext.video.providers import video_provider_patterns
 
-def is_valid_video_url(value: str) -> bool:
+def is_valid_video_url(str):
     """
     Determine whether a URL is a valid video URL.
 
@@ -20,7 +20,7 @@ def is_valid_video_url(value: str) -> bool:
             return True
     return False
 
-def is_valid_video_url_with_context(value: str, context) -> str:
+def is_valid_video_url_with_context(value, context):
     """
     Validate a URL is a valid video URL.
 

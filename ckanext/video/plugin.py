@@ -71,7 +71,7 @@ class VideoPlugin(SingletonPlugin):
                 video_provider_patterns[key], video_url, re.IGNORECASE
             )
             if match:
-                video_url = f'https://www.youtube.com/embed/{match.group(1)}'
+                video_url = 'https://www.youtube.com/embed/{embed_url}'.format(embed_url=match.group(1))
                 break
 
         # TODO - More video provider types
