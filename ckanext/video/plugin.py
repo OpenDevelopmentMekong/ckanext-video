@@ -27,6 +27,7 @@ class VideoPlugin(SingletonPlugin):
 
     def update_config(self, config):
         toolkit.add_template_directory(config, 'theme/templates')
+        toolkit.add_resource('theme/assets', 'ckanext-video')
 
     def info(self):
         return {
