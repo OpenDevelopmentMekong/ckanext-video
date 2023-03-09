@@ -1,1 +1,4 @@
-<iframe width="{{ resource_view.get('width') }}" height="{{ resource_view.get('height') }}" src="{{ video_url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{% asset 'ckanext-video/ckanext_video_css' %}
+<div class="video-view-container">
+    <iframe class="video-view-iframe" src="{{ video_url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>

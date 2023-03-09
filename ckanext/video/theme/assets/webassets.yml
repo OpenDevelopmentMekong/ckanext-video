@@ -1,0 +1,4 @@
+ckanext_video_css:
+  output: ckanext-video/%(version)s_ckanext-video.css
+  contents:
+    - video-view.css
