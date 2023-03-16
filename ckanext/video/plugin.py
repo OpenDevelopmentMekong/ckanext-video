@@ -35,9 +35,7 @@ class VideoPlugin(SingletonPlugin):
             'title': toolkit._('Embedded Video'),
             'default_title': toolkit._('Video Preview'),
             'schema': {
-                'video_url': [ignore_empty, str, is_valid_video_url_with_context],
-                'width': [not_empty, is_positive_integer],
-                'height': [not_empty, is_positive_integer],
+                'video_url': [ignore_empty, str, is_valid_video_url_with_context]
             },
             'iframed': False,
             'icon': 'film',
