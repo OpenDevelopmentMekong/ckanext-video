@@ -25,8 +25,5 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8"
     ],
-    entry_points ='''
-        [ckan.plugins]
-        video = ckanext.video.plugin:VideoPlugin
-    '''
+    entry_points={ 'ckan.plugins': ['video = ckanext.video.plugin:VideoPlugin'] }
 )
